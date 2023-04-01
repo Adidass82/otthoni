@@ -1,0 +1,175 @@
+<!-- Ez a HTML dokumentum -->
+ 
+<!DOCTYPE html>
+<html lang="hu">
+ 
+<!-- Itt kezdődik a dokumentum <head> fej része-->
+<head>
+    <!-- A fejben a leíró metaelmek jegyzéke -->
+    <meta charset="UTF-8"> <!-- feliratok betű kódlapja   -->
+    <!-- Böngésző kompatibilitás -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!-- A megjelenítő eszköz képernyő tuléajdonságai -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Böngésző lapfül felirata -->
+    <title>Első html</title>
+ 
+    <!-- Ez egy megjegyzés -->
+ 
+    <!-- EZ a stílus leítrás, ebben az esetben egy 
+    beágyazott stíluslap -->
+    <style>
+        /* ez egy css megjegyzés */
+ 
+        /* A stílus lapban létrehozott elem "kontener"
+        attributtumainak(jellemzőinek) leírása { ben } */
+        .kontener { /* osztály megnevezése */
+            height: 100px;/* magasság */
+            width: 100px;/* szélesség */
+            background-color: blue; /* háttér szín */
+            color:yellow; /* írás színe */
+       margin-bottom: 20px;
+        }
+
+        .kep{
+            width: 200px;
+        }
+        .bold{
+            color: blue;
+        }
+        table, th, td{
+            border:1px solid black
+  
+        }
+        th{background-color: green;
+            color: aqua;
+        }
+        tr:nth-child(odd) {
+            background-color: gray;
+        }
+        tr:nth-child(even) {
+            background-color:lightblue;
+        }
+
+        .btn{
+            margin-top: 15px;
+            margin-bottom: 30px;
+            width: 70px;
+            height: 25px;
+            border-radius: 10%;
+            background-color: orange;
+            border: none;
+            /* border=keret */
+        }
+    </style>
+</head>
+<!-- Itt végződik a dokumentum </head> fej része-->
+ 
+<!-- Itt kezdődik a dokumentum <body> test része-->
+<body>
+    <h1>Ez a címsor</h1>
+    <h2>Ez az alcím</h2>
+    <h2>A másik alcím</h2>
+    <h3>Ez egy al-alcím, szöveg</h3>
+    <h4>Ez egy kicsi bejegyzés</h4>
+    <h5>Ez egy még kissebb bejegyzés</h5>
+    <h6>Ez egy apró bejegyzés</h6>
+    <p>Ez egy bekezdés(paragraph)</p>
+    <div class="kontener">
+        Ez egy konténer, területfoglalás
+    </div>
+    <P>Lorem ipsum, <b class="bold">dolor</b> sit amet <strong> aquarium</strong> adipisicing elit. 
+        <i> Ex sit doloribus ullam quia? Qui itaque perspiciatis </i>dolorum molestias 
+        nulla obcaecati ratione odio animi est harum asperiores, dolor voluptatem,
+         magnam sed?</P>
+    <img class="kep" src="cica.jpg" alt="Ez egy cica képe, 
+    de mmost nincs meg a kép, ez a felirat van megjelenítve helyette">
+    <br> <!-- Ez egy sor léptetésre használt TAG  -->
+    <hr> <!-- Ez egy elválasztó vonal -->
+    <ul>
+        <li>Ez a lista elsö sora</li>
+        <li>Ez a második sor</li>
+        <li>Ez a harmadik sor</li>
+    </ul>
+
+    <ol>
+        <li>Ez a lista elsö sora</li>
+        <li>Ez a második sor</li>
+        <li>Ez a harmadik sor</li>
+    </ol>
+    <dl>
+        <dt>Ez a cim sor</dt>
+        <dd>Az alcim</dd>
+        <dd>másik</dd>
+    </dl>
+
+    <!--Ez egy táblázat lesz-->
+    <table style="width: 70%;">
+        <tr>
+            <th>sorszám</th>
+            <th>Név</th>
+            <th>Lakcím</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Gillich József</td>
+            <td>Rákócziújfalu</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Gillich Zoltán</td>
+            <td>Nagykörű</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Gillich József</td>
+            <td>Szolnok</td>
+        <tr>
+                <td>4</td>
+                <td>Nagy Krisztina</td>
+                <td>Debrecen</td>
+        </tr>
+        </tr>
+    </table>
+
+    <h2>Adat beviteli form</h2>
+    <form action="">
+        <label for="">first name</label>
+        <input type="text"><br>
+        <label for="">last name</label>
+        <input type="text"><br>
+        <input type="number"><br>
+        <input type="submit">
+
+    </form>
+    <h2>rádió gombos kiválasztás</h2>
+    <form action="">
+        <p>kérlek vászad ki a neked megfelelő paramétert</p>
+        <input type="radio" id="html name"fav_language value="HTML">
+        <label for="html">Html</label><br>
+        <input type="radio" id="css"fav_language value="css">
+        <label for="css">Css</label><br>
+        <input type="radio" id="java script"fav_language value="java script">
+        <label for="java script">Javascript</label><br>
+
+        <br>
+
+        <p>Kérlek ebből válasz</p>
+        <input type="radio" id="age1"name="age" value="30">
+        <label for="0-30">0-30</label><br>
+        <input type="radio" id="age2" name="age2" value="60">
+        <label for="age2">31-60</label><br>
+        <input type="radio" id="age3" name="age3" value="100">
+        <label for="age3">61-100</label><br>
+        <input type="submit" value="Elküld" class="btn">
+    </form>
+
+    <a href="http://google.hu">google</a>
+
+</body>
+<!-- Itt végződik a dokumentum </body> test része-->
+ 
+</html>
+<!-- Itt végződik a dokumentum -->
+
+
