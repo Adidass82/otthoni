@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', sans-serif;
+        }
+         .container-h{
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            line-height: 40px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            gap: 15px;
+            color: azure;
+         }
+        .menu {
+            display: flex;
+            gap: 50px;
+
+        }
+        .menu, .div {
+            height: 50px;
+            background-color: dodgerblue;
+        }
+        .logo {
+            width: 100px;
+            height: 80px;
+        }
+        #main{
+            height: 100px;
+        }
+        .fotter-div{
+            height: 100px;
+            width: 20%;
+        }
+        .fotter{
+           display: flex;
+            justify-content: space-between;
+            gap: 1%;
+        }
+
+        </style>
+</head>
+<body>
+    <header class="container-h">
+        <div>
+            <img class="logo" src="NikeLogo.png" alt="">
+        </div>
+     <div class="menu">
+         <nav class="nav">
+
+            <div class="div">Home</div>
+            <div class="div"><a href="#">Description</a></div>
+            <div class="div">Gallery</div>
+            <div class="div">Info</div>
+         </nav>
+            <div>Login/SignIn</div>
+     </div>
+    </header>
+    <main>
+    <div id="main"></div>
+    </main>
+    <footer class="fotter">
+        <div class="fotter-div">Lorem ipsum dolor sit amet   </div>
+        <div class="fotter-div">consectetur adipisicing elit.</div>
+        <div class="fotter-div">Quibusdam nam neque dolorem vel </div>
+        <div class="fotter-div">Laudantium, omnis. Aliquam </div>
+    </footer>
+</body>
+</html>
